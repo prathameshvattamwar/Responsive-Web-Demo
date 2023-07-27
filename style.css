@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    padding: 0vh 5vw;
+    /* background-color: #d5d3d3; */
+}
+
+.nav-menu{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+.nav-menu h2{
+    font-size: 1.2vw;
+    cursor: pointer;
+    padding: 3px;
+    transition: .1s ease;
+}
+
+.nav-menu h2:hover{
+    color: lightseagreen;
+    border-bottom: 2px solid #000;
+}
+
+.nav-menu i{
+    font-size: 1.8vw;
+    flex-wrap: 800;
+    display: none;
+}
+
+.middle{
+    height: calc(100vh - 140px);
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+.middle .left{
+    width: 50%;
+    height:calc(100vh - 140px);
+}
+
+.middle .left h1{
+    font-size: 5vw;
+    width: 90%;
+    padding: 7vh 5vw;
+}
+
+.middle .left h1 span{
+    color: lightseagreen;
+}
+
+.middle .left p{
+    padding: 0 5.5vw;
+    width: 90%;
+    margin-top: -2vh;
+}
+
+.middle .left button{
+    padding: 1vw;
+    margin: 5vh 5.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    background-color: lightseagreen;
+    transition: .2s ease;
+}
+
+.middle .left button:hover{
+    box-shadow: 2px 2px 3px #000;
+}
+
+.middle .right{
+    width: 50%;
+    height: calc(100vh - 140px);
+}
+
+.coder{
+    width: 100%;
+    height: 100%;
+    padding: 0vh 5vw;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    /* background-color: #d5d3d3; */
+}
+
+@media (max-width:600px) {
+    nav{
+        background-color: lightseagreen;
+        color: #fff;
+        padding: 0 6vw;
+    }
+    nav h1{
+        font-size: 8vw;
+    }
+    .nav-menu h2{
+        font-size: 2.3vw;
+        display: none;
+    }
+    .nav-menu i{
+        cursor: pointer;
+        display: block;
+        font-size: 8vw;
+    }
+    .middle{
+        flex-direction: column;
+    }
+    .middle .left{
+        width: 100%;
+    }
+    .middle .left h1{
+        font-size: 10vw;
+        width: 100%;
+        padding: 5vh 5vw;
+    }
+    .middle .left p{
+        width: 90%;
+        margin-top: -2vh;
+        font-size: 1em;
+    }
+    .middle .right{
+        width: 100%;
+    }
+    .coder{
+        width: 100%;
+        padding: 0vh 20vw;
+        margin-top: -2vh;
+    }
+    footer{
+        background-color: lightseagreen;
+        height: 40px;
+        margin-top: 20px;
+    }
+    .middle .left button{
+        padding: 2.5vw;
+    }
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+    nav h1{
+        font-size: 4vw;
+    }
+    .nav-menu h2{
+        font-size: 1.8vw;
+    }
+    .middle .left h1{
+        font-size: 6vw;
+        width: 100%;
+        padding: 8vh 5vw;
+    }
+    .middle .left p{
+        width: 100%;
+        margin-top: -2vh;
+        font-size: 1em;
+    }
+    .coder{
+        width: 100%;
+    }
+}
+
